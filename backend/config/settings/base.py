@@ -92,4 +92,4 @@ REST_FRAMEWORK = {
     ],
 }
 
-ORS_API_KEY = os.environ.get("ORS_API_KEY", "")
+GOOGLE_MAPS_API_KEY = os.environ.get("GOOGLE_MAPS_API_KEY", "")

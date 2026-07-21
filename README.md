@@ -7,7 +7,7 @@ A full-stack web app that generates FMCSA-compliant ELD (Electronic Logging Devi
 - **Frontend:** React + Vite + TypeScript, Tailwind CSS + shadcn/ui, Leaflet maps
 - **Backend:** Django + Django REST Framework, Python 3.13
 - **Database:** Supabase (PostgreSQL)
-- **Routing:** OpenRouteService API
+- **Routing:** Google Maps Platform (Directions, Geocoding)
 - **Deployment:** Vercel (frontend) + Render (backend)
 
 ## Quick Start
@@ -19,7 +19,7 @@ cd backend
 python3 -m venv .venv
 source .venv/Scripts/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements/dev.txt
-cp ../.env.example .env         # Edit with your Supabase URL + ORS key
+cp ../.env.example .env         # Edit with your Supabase URL + Google Maps key
 python manage.py migrate
 python manage.py runserver
 ```
