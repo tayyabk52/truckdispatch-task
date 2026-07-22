@@ -2,6 +2,9 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings.dev")
+# Server entrypoint defaults to production settings. Local development uses
+# manage.py (which defaults to config.settings.dev). An explicit
+# DJANGO_SETTINGS_MODULE env var always overrides this default.
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings.prod")
 
 application = get_asgi_application()
