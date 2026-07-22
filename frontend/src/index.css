@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+/* Ensure the app fills the viewport and uses the theme font stack. */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+/* Leaflet: keep map tiles below MUI overlays (drawer, dialogs, tooltips). */
+.leaflet-container {
+  font-family: inherit;
+  z-index: 0;
+}
+
+/* Polish Leaflet popups to match the app's rounded, soft-shadow style. */
+.leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(60, 64, 67, 0.18);
+}
+
+.leaflet-popup-content {
+  margin: 12px 14px;
+  line-height: 1.5;
+}

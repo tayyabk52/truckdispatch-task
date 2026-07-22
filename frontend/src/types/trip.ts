@@ -65,7 +65,7 @@ export interface DailyLog {
   total_driving: number;
   total_on_duty_not_driving: number;
   shipping_doc_number: string;
-  generated_svg: string;
+  svg_url: string;
 }
 
 export interface Trip {
