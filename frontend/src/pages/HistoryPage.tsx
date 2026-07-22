@@ -180,7 +180,7 @@ export default function HistoryPage() {
                 width: { xs: 180, sm: 240 },
                 "& .MuiOutlinedInput-root": {
                   borderRadius: 2,
-                  fontSize: "0.8rem",
+                  fontSize: { xs: "16px", sm: "0.8rem" },
                   bgcolor: "#ffffff",
                 },
               }}

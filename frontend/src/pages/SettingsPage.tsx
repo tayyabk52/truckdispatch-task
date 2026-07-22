@@ -144,42 +144,42 @@ export default function SettingsPage() {
               label="Driver Name"
               value={draft.defaults.driver_name}
               onChange={(e) => setDefault("driver_name", e.target.value)}
-              slotProps={{ input: { sx: { borderRadius: 2, fontSize: "0.85rem" } } }}
+              slotProps={{ input: { sx: { borderRadius: 2, fontSize: { xs: "16px", sm: "0.85rem" } } } }}
             />
             <TextField
               size="small"
               label="Co-Driver"
               value={draft.defaults.co_driver}
               onChange={(e) => setDefault("co_driver", e.target.value)}
-              slotProps={{ input: { sx: { borderRadius: 2, fontSize: "0.85rem" } } }}
+              slotProps={{ input: { sx: { borderRadius: 2, fontSize: { xs: "16px", sm: "0.85rem" } } } }}
             />
             <TextField
               size="small"
               label="Carrier Name"
               value={draft.defaults.carrier_name}
               onChange={(e) => setDefault("carrier_name", e.target.value)}
-              slotProps={{ input: { sx: { borderRadius: 2, fontSize: "0.85rem" } } }}
+              slotProps={{ input: { sx: { borderRadius: 2, fontSize: { xs: "16px", sm: "0.85rem" } } } }}
             />
             <TextField
               size="small"
               label="Main Office Address"
               value={draft.defaults.main_office}
               onChange={(e) => setDefault("main_office", e.target.value)}
-              slotProps={{ input: { sx: { borderRadius: 2, fontSize: "0.85rem" } } }}
+              slotProps={{ input: { sx: { borderRadius: 2, fontSize: { xs: "16px", sm: "0.85rem" } } } }}
             />
             <TextField
               size="small"
               label="Truck #"
               value={draft.defaults.truck_number}
               onChange={(e) => setDefault("truck_number", e.target.value)}
-              slotProps={{ input: { sx: { borderRadius: 2, fontSize: "0.85rem" } } }}
+              slotProps={{ input: { sx: { borderRadius: 2, fontSize: { xs: "16px", sm: "0.85rem" } } } }}
             />
             <TextField
               size="small"
               label="Trailer #"
               value={draft.defaults.trailer_number}
               onChange={(e) => setDefault("trailer_number", e.target.value)}
-              slotProps={{ input: { sx: { borderRadius: 2, fontSize: "0.85rem" } } }}
+              slotProps={{ input: { sx: { borderRadius: 2, fontSize: { xs: "16px", sm: "0.85rem" } } } }}
             />
           </Box>
         </SectionCard>
@@ -212,7 +212,7 @@ export default function SettingsPage() {
               slotProps={{
                 htmlInput: { min: 0, max: 70, step: 0.25 },
                 input: {
-                  sx: { borderRadius: 2, fontSize: "0.85rem" },
+                  sx: { borderRadius: 2, fontSize: { xs: "16px", sm: "0.85rem" } },
                   endAdornment: (
                     <InfoTooltip title="Starting value for cycle hours on new trip plans." size={14} />
                   ),
@@ -227,7 +227,7 @@ export default function SettingsPage() {
               onChange={(e) =>
                 setPref("distance_unit", e.target.value as "mi" | "km")
               }
-              slotProps={{ input: { sx: { borderRadius: 2, fontSize: "0.85rem" } } }}
+              slotProps={{ input: { sx: { borderRadius: 2, fontSize: { xs: "16px", sm: "0.85rem" } } } }}
             >
               <MenuItem value="mi">Miles (mi)</MenuItem>
               <MenuItem value="km">Kilometers (km)</MenuItem>

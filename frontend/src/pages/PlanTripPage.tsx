@@ -341,7 +341,7 @@ export default function PlanTripPage() {
                       required
                       slotProps={{
                         input: {
-                          sx: { borderRadius: 2, fontSize: "0.835rem", bgcolor: "#ffffff" },
+                          sx: { borderRadius: 2, fontSize: { xs: "16px", sm: "0.835rem" }, bgcolor: "#ffffff" },
                           startAdornment: (
                             <InputAdornment position="start">
                               <Schedule fontSize="small" style={{ fontSize: 16, color: "text.secondary" }} />
@@ -369,7 +369,7 @@ export default function PlanTripPage() {
                       required
                       slotProps={{
                         inputLabel: { shrink: true },
-                        input: { sx: { borderRadius: 2, fontSize: "0.835rem", bgcolor: "#ffffff" } },
+                        input: { sx: { borderRadius: 2, fontSize: { xs: "16px", sm: "0.835rem" }, bgcolor: "#ffffff" } },
                       }}
                       helperText="Scheduled departure time"
                     />
@@ -407,10 +407,10 @@ export default function PlanTripPage() {
                       Driver & Carrier Information
                     </Typography>
                     <Box sx={{ display: "grid", gap: 1.5, gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" } }}>
-                      <TextField size="small" label="Driver Name" value={advanced.driver_name} onChange={(e) => updateAdvanced("driver_name", e.target.value)} slotProps={{ input: { sx: { borderRadius: 2, fontSize: "0.835rem" } } }} />
-                      <TextField size="small" label="Co-Driver" value={advanced.co_driver} onChange={(e) => updateAdvanced("co_driver", e.target.value)} slotProps={{ input: { sx: { borderRadius: 2, fontSize: "0.835rem" } } }} />
-                      <TextField size="small" label="Carrier Name" value={advanced.carrier_name} onChange={(e) => updateAdvanced("carrier_name", e.target.value)} slotProps={{ input: { sx: { borderRadius: 2, fontSize: "0.835rem" } } }} />
-                      <TextField size="small" label="Main Office Address" value={advanced.main_office} onChange={(e) => updateAdvanced("main_office", e.target.value)} slotProps={{ input: { sx: { borderRadius: 2, fontSize: "0.835rem" } } }} />
+                      <TextField size="small" label="Driver Name" value={advanced.driver_name} onChange={(e) => updateAdvanced("driver_name", e.target.value)} slotProps={{ input: { sx: { borderRadius: 2, fontSize: { xs: "16px", sm: "0.835rem" } } } }} />
+                      <TextField size="small" label="Co-Driver" value={advanced.co_driver} onChange={(e) => updateAdvanced("co_driver", e.target.value)} slotProps={{ input: { sx: { borderRadius: 2, fontSize: { xs: "16px", sm: "0.835rem" } } } }} />
+                      <TextField size="small" label="Carrier Name" value={advanced.carrier_name} onChange={(e) => updateAdvanced("carrier_name", e.target.value)} slotProps={{ input: { sx: { borderRadius: 2, fontSize: { xs: "16px", sm: "0.835rem" } } } }} />
+                      <TextField size="small" label="Main Office Address" value={advanced.main_office} onChange={(e) => updateAdvanced("main_office", e.target.value)} slotProps={{ input: { sx: { borderRadius: 2, fontSize: { xs: "16px", sm: "0.835rem" } } } }} />
                     </Box>
                   </Box>
 
@@ -419,8 +419,8 @@ export default function PlanTripPage() {
                       Vehicle Equipment
                     </Typography>
                     <Box sx={{ display: "grid", gap: 1.5, gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" } }}>
-                      <TextField size="small" label="Truck #" value={advanced.truck_number} onChange={(e) => updateAdvanced("truck_number", e.target.value)} slotProps={{ input: { sx: { borderRadius: 2, fontSize: "0.835rem" } } }} />
-                      <TextField size="small" label="Trailer #" value={advanced.trailer_number} onChange={(e) => updateAdvanced("trailer_number", e.target.value)} slotProps={{ input: { sx: { borderRadius: 2, fontSize: "0.835rem" } } }} />
+                      <TextField size="small" label="Truck #" value={advanced.truck_number} onChange={(e) => updateAdvanced("truck_number", e.target.value)} slotProps={{ input: { sx: { borderRadius: 2, fontSize: { xs: "16px", sm: "0.835rem" } } } }} />
+                      <TextField size="small" label="Trailer #" value={advanced.trailer_number} onChange={(e) => updateAdvanced("trailer_number", e.target.value)} slotProps={{ input: { sx: { borderRadius: 2, fontSize: { xs: "16px", sm: "0.835rem" } } } }} />
                     </Box>
                   </Box>
 
@@ -429,9 +429,9 @@ export default function PlanTripPage() {
                       Manifest / Shipment Paperwork
                     </Typography>
                     <Box sx={{ display: "grid", gap: 1.5, gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" } }}>
-                      <TextField size="small" label="Shipper Name" value={advanced.shipper_name} onChange={(e) => updateAdvanced("shipper_name", e.target.value)} slotProps={{ input: { sx: { borderRadius: 2, fontSize: "0.835rem" } } }} />
-                      <TextField size="small" label="Commodity" value={advanced.commodity} onChange={(e) => updateAdvanced("commodity", e.target.value)} slotProps={{ input: { sx: { borderRadius: 2, fontSize: "0.835rem" } } }} />
-                      <TextField size="small" label="BOL / Manifest #" value={advanced.bol_number} onChange={(e) => updateAdvanced("bol_number", e.target.value)} slotProps={{ input: { sx: { borderRadius: 2, fontSize: "0.835rem" } } }} sx={{ gridColumn: { sm: "1 / -1" } }} />
+                      <TextField size="small" label="Shipper Name" value={advanced.shipper_name} onChange={(e) => updateAdvanced("shipper_name", e.target.value)} slotProps={{ input: { sx: { borderRadius: 2, fontSize: { xs: "16px", sm: "0.835rem" } } } }} />
+                      <TextField size="small" label="Commodity" value={advanced.commodity} onChange={(e) => updateAdvanced("commodity", e.target.value)} slotProps={{ input: { sx: { borderRadius: 2, fontSize: { xs: "16px", sm: "0.835rem" } } } }} />
+                      <TextField size="small" label="BOL / Manifest #" value={advanced.bol_number} onChange={(e) => updateAdvanced("bol_number", e.target.value)} slotProps={{ input: { sx: { borderRadius: 2, fontSize: { xs: "16px", sm: "0.835rem" } } } }} sx={{ gridColumn: { sm: "1 / -1" } }} />
                     </Box>
                   </Box>
                 </Stack>
