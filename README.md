@@ -52,7 +52,7 @@ cp .env.example .env.local
 npm run dev
 ```
 
-Navigate to `http://localhost:5173` to view the application.
+Navigate to `[http://localhost:5173](https://truckdispatch-task.vercel.app/)` to view the application.
 
 ## 🌐 Production Deployment
 
