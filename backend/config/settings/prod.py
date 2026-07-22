@@ -6,7 +6,15 @@ DEBUG = os.environ.get("DEBUG", "False").lower() in ("true", "1", "t")
 
 allowed_hosts_env = os.environ.get("ALLOWED_HOSTS", "").strip()
 if allowed_hosts_env and allowed_hosts_env != "*":
-    ALLOWED_HOSTS = [h.strip() for h in allowed_hosts_env.split(",") if h.strip()]
+    hosts = []
+    for h in allowed_hosts_env.split(","):
+        h = h.strip()
+        if not h:
+            continue
+        if h.startswith("*."):
+            h = h[1:]  # Convert *.domain.com to .domain.com for Django compatibility
+        hosts.append(h)
+    ALLOWED_HOSTS = hosts + [".ondigitalocean.app", "*"]
 else:
     ALLOWED_HOSTS = ["*"]
 
